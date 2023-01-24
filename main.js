@@ -9,7 +9,7 @@ input_password: ""
     },
 methods: {
 submitLogin(e){
-if(!this.input_email && !this.input_password) {
+if(!this.input_email || !this.input_password) {
 return alert("Coloque um email e senha!")
 } else {
     return console.log('Email: ' + this.input_email + "\nSenha: " + this.input_password)
