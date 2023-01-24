@@ -26,5 +26,5 @@ if(savedEmail === input_email) {
 }
 },
 }
-    
+
 }).mount("#app")
