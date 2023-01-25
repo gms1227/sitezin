@@ -1,6 +1,6 @@
-const { createApp } = Vue 
-const { QuickDB } = require("quick.db")
+ import { QuickDB } from "quick.db"
 const db = new QuickDB()
+const { createApp } = Vue
 
 createApp({
     data() {
@@ -21,10 +21,14 @@ if(savedEmail === input_email) {
     alert(`Foi salvo seu email e senha!`)
     db.set(input_email, {input_email})
     db.set(input_email, {input_password})
-    console.log(" " + input_email + " " + input_password)
+    
 }
+
+console.log("Email: " + this.input_email + " Senha: " + this.input_password)
 }
 },
 }
 
 }).mount("#app")
+
+app.listen(5500)
