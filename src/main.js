@@ -1,6 +1,7 @@
  import { QuickDB } from "quick.db"
+ import { createApp } from 'vue'
 const db = new QuickDB()
-const { createApp } = Vue
+
 
 createApp({
     data() {
