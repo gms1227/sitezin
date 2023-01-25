@@ -32,4 +32,3 @@ console.log("Email: " + this.input_email + " Senha: " + this.input_password)
 
 }).mount("#app")
 
-app.listen(5500)
